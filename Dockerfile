@@ -11,5 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY product_list_app.py .
 
 EXPOSE 5000
-
-CMD ["python3", "0.0.0.0:5000", "product_list_app.py"]
+ENV FLASK_APP=product_list_app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+CMD ["flask", "run", "--port", "5000"]
