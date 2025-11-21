@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: monitorapp
-        image: amruthavm0407/flask:v1
+        image: amruthavm0407/flusk:v1
         ports:
         - containerPort: 5000
